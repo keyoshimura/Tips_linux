@@ -21,3 +21,6 @@ screen -S hoge -X quit
 # 名前が hoge のセッションで ls を実行する
 screen -S hoge -X stuff 'ls'`echo -ne '\015'`
 
+●ディレクトリを削除
+rm -rf ディレクトリ名
+
