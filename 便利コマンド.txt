@@ -1,0 +1,23 @@
+●セッション切れする時は...
+screenコマンドを使おう。
+http://kagasu.hatenablog.com/entry/20160627/1467012578
+
+名前をつけてscreenを作成
+screen -S hoge
+
+切り替え
+screen -r hoge
+
+セッション一覧表示
+screen -ls
+
+名前をつけてscreenを作成（デタッチした状態で開始）
+screen -dmS hoge
+
+外部から終了する
+screen -S hoge -X quit
+
+外部から任意のコマンドを実行する
+# 名前が hoge のセッションで ls を実行する
+screen -S hoge -X stuff 'ls'`echo -ne '\015'`
+
