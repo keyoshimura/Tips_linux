@@ -21,6 +21,10 @@ screen -S hoge -X quit
 # 名前が hoge のセッションで ls を実行する
 screen -S hoge -X stuff 'ls'`echo -ne '\015'`
 
+screenを削除する。
+コマンドでも削除できそうだけど、間違えて削除するのが怖いから、exitで抜けていけば削除できるのでそちらで。
+
+
 ●ディレクトリを削除
 rm -rf ディレクトリ名
 
