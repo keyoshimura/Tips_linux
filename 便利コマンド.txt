@@ -6,7 +6,7 @@ http://kagasu.hatenablog.com/entry/20160627/1467012578
 screen -S hoge
 
 切り替え
-screen -r hoge
+screen -rprocessesID
 
 セッション一覧表示
 screen -ls
