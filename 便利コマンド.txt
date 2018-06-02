@@ -1,6 +1,7 @@
 ●セッション切れする時は...
 screenコマンドを使おう。
 http://kagasu.hatenablog.com/entry/20160627/1467012578
+http://dasunhegoda.com/unix-screen-command/263/
 
 名前をつけてscreenを作成
 screen -S hoge
@@ -23,6 +24,9 @@ screen -S hoge -X stuff 'ls'`echo -ne '\015'`
 
 screenを削除する。
 コマンドでも削除できそうだけど、間違えて削除するのが怖いから、exitで抜けていけば削除できるのでそちらで。
+
+まあ、どうしてもコマンドで消すのなら、下記のコマンドで「デタッチされている」スクリーンなら消せる。
+screen -X -S SCREENID quit
 
 ・デタッチする
 Ctrlと「A」を同時に押しましたのちに、D
